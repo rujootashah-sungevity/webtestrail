@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Testrail project</title>
+  </head>
+  <body>
+      <h1>Testrail summary</h1>
+      <h2>{{ jsondata }}</h2>
+  <table>
+      	{% for item in jsondata %}
+	        <tr>
+	            <td>
+	                {{ item.id }}
+	            </td>
+	            <td>
+	                {{ item.name|safe }}
+	            </td>
+	        </tr>
+	        {% endfor %}
+  </table>
+  </body>
+</html>
